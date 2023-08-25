@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Grid layout ass4</title>
+    <style>
+     
+      body {
+        display: grid;
+        grid-template-areas:
+          
+          "one one one one" 
+         "two three four five" 
+         "two six seven five" 
+         "two six eight  nine";
+        grid-template-rows: 50vh  30vh 10vh 10vh;
+        grid-template-columns: 50% 20% 20% 10%
+        height: 90vh;
+        grid-gap: 10px;
+        
+       
+      }
+
+      
+      div 
+ {
+        background-color:lightslategray;
+      }
+    #one{ 
+         grid-area: one; 
+     } 
+     #two{ 
+         grid-area: two; 
+     } 
+     #three{ 
+         grid-area: three; 
+     } 
+     #four{ 
+         grid-area: four; 
+     } 
+     #five{ 
+         grid-area: five; 
+     } 
+     #six{ 
+         grid-area: six; 
+     } 
+     #seven{ 
+         grid-area: seven; 
+     } 
+     #eight{ 
+         grid-area: eight; 
+     } 
+     #nine{ 
+         grid-area: nine; 
+     }
+      
+    </style>
+  </head>
+  <body>
+  
+        <div id="one">1</div> 
+     <div id="two">2</div> 
+     <div id="three">3</div> 
+     <div id="four">4</div> 
+     <div id="five">5</div> 
+     <div id="six">6</div> 
+     <div id="seven">7</div> 
+     <div id="eight">8</div> 
+     <div id="nine">9</div>  </body>
+</html>
