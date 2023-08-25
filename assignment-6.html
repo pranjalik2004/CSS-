@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Grid layout ass4</title>
+    <style>
+     
+      body {
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          "nav article article article"
+          "aside article article article"
+          "aside footer footer footer";
+        grid-template-rows: 10vh 70vh 10vh 10vh;
+        grid-template-columns: 20% 40% 20% 20%
+        height: 90vh;
+        grid-gap: 10px;
+        
+      }
+
+      header,
+      nav,
+      footer,
+      article,
+      div
+ {
+        background-color:lightslategray;
+      }
+
+      #Header {
+        grid-area: header;
+      }
+
+      #Nav {
+        grid-area: nav;
+      }
+
+      #Article {
+        grid-area: article;
+      }
+
+      #Ads {
+        grid-area: aside;
+      }
+
+      #Footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="Header">Header</header>
+    <nav id="Nav">Nav</nav>
+    <article id="Article">Article</article>
+    <div id="Ads">Ads</div>
+     
+    <footer id="Footer">Footer</footer>
+  </body>
+</html>
