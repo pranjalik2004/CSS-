@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+   
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            justify-content:space eventual ;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0px;
+            width:50%;
+        }
+
+        label {
+            width: 100px; 
+        }
+
+        input[type="text"] {
+            flex: 1; 
+            margin-top:20px;
+            padding: 5px;
+            margin-left: 0px; 
+        }
+
+        button {
+            margin-top: 10px; /* Add spacing below the last row */
+            margin-left:39vh;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text">
+        </div>
+        <div class="form-row"> 
+        <label for="town">Town where you born:</label>
+        <br>
+            <input type="text">
+        </div>
+        <div class="form-row">
+            <label for="email">Email Address:</label>
+            <br>
+            <input type="text">
+        </div>
+        <div class="form-row">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
